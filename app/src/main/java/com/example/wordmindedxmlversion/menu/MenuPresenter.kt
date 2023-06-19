@@ -9,8 +9,13 @@ class MenuPresenter
 @Inject constructor() : MvpPresenter<MenuView>() {
 
     fun onItemCLicked() {
-        viewState.openGameScreen()
-        viewState.openRulesScreen()
 //        viewState.openSettingsScreen()
+    }
+    fun onButtonPlayClicked(){
+        viewState.openGameScreen()
+    }
+
+    fun onButtonRulesClicked(){
+        viewState.openRulesScreen()
     }
 }

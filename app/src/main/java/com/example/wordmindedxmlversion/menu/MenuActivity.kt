@@ -15,7 +15,7 @@ import javax.inject.Provider
 @AndroidEntryPoint
 class MenuActivity : MvpAppCompatActivity(), MenuView {
 
-    val buttonStart: Button by lazy { findViewById(R.id.menu_start_button) }
+    val buttonPlay: Button by lazy { findViewById(R.id.menu_start_button) }
     val buttonRules: Button by lazy { findViewById(R.id.menu_rules_button) }
     val buttonSettings: Button by lazy { findViewById(R.id.menu_settings_button) }
 
@@ -27,8 +27,8 @@ class MenuActivity : MvpAppCompatActivity(), MenuView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        buttonStart.setOnClickListener { presenter.onItemCLicked() }
-        buttonRules.setOnClickListener { presenter.onItemCLicked() }
+        buttonPlay.setOnClickListener { presenter.onButtonPlayClicked() }
+        buttonRules.setOnClickListener { presenter.onButtonRulesClicked() }
         buttonSettings.setOnClickListener { presenter.onItemCLicked() }
     }
 
@@ -39,8 +39,8 @@ class MenuActivity : MvpAppCompatActivity(), MenuView {
     override fun openRulesScreen() {
         startActivity(Intent(this, RulesActivity::class.java))
     }
-//
+
 //    override fun openSettingsScreen() {
-//        startActivity(Intent(this, SettingsScreenActivity::class.java))
+//        startActivity(Intent(this, SettingsActivity::class.java))
 //    }
 }
