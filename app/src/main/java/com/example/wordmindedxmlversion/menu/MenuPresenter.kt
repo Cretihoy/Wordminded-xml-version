@@ -8,14 +8,15 @@ import javax.inject.Inject
 class MenuPresenter
 @Inject constructor() : MvpPresenter<MenuView>() {
 
-    fun onItemCLicked() {
-//        viewState.openSettingsScreen()
-    }
-    fun onButtonPlayClicked(){
+    fun onButtonPlayClicked() {
         viewState.openGameScreen()
     }
 
-    fun onButtonRulesClicked(){
+    fun onButtonRulesClicked() {
         viewState.openRulesScreen()
+    }
+
+    fun onButtonSettingsCLicked() {
+        viewState.openSettingsScreen()
     }
 }

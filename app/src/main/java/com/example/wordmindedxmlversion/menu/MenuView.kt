@@ -11,7 +11,7 @@ interface MenuView : MvpView {
 
     @StateStrategyType(SkipStrategy::class)
     fun openRulesScreen()
-//
-//    @StateStrategyType(SkipStrategy::class)
-//    fun openSettingsScreen()
+
+    @StateStrategyType(SkipStrategy::class)
+    fun openSettingsScreen()
 }
