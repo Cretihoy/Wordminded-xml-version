@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.wordmindedxmlversion.R
 import com.example.wordmindedxmlversion.game.GameActivity
+import com.example.wordmindedxmlversion.rules.RulesActivity
 import dagger.hilt.android.AndroidEntryPoint
 import moxy.MvpAppCompatActivity
 import moxy.ktx.moxyPresenter
@@ -35,9 +36,9 @@ class MenuActivity : MvpAppCompatActivity(), MenuView {
         startActivity(Intent(this, GameActivity::class.java))
     }
 
-//    override fun openRulesScreen() {
-//        startActivity(Intent(this, RulesScreenActivity::class.java))
-//    }
+    override fun openRulesScreen() {
+        startActivity(Intent(this, RulesActivity::class.java))
+    }
 //
 //    override fun openSettingsScreen() {
 //        startActivity(Intent(this, SettingsScreenActivity::class.java))

@@ -10,7 +10,7 @@ class MenuPresenter
 
     fun onItemCLicked() {
         viewState.openGameScreen()
-//        viewState.openRulesScreen()
+        viewState.openRulesScreen()
 //        viewState.openSettingsScreen()
     }
 }

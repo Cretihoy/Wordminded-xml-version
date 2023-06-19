@@ -28,7 +28,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="?colorSecondary"
-            android:text="@string/play" />
+            android:text="@string/menu_play" />
 
         <Button
             android:id="@+id/menu_rules_button"
@@ -36,7 +36,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="?colorPrimary"
-            android:text="@string/rules" />
+            android:text="@string/menu_rules" />
 
         <Button
             android:id="@+id/menu_settings_button"
@@ -44,7 +44,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="?colorSecondary"
-            android:text="@string/settings" />
+            android:text="@string/menu_settings" />
 
     </LinearLayout>
 </LinearLayout>
