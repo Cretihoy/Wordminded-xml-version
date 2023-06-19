@@ -14,10 +14,10 @@
         android:theme="@style/Theme.WordmindedXmlVersion"
         tools:targetApi="31">
         <activity
-            android:name=".gameScreen.GameScreenActivity"
+            android:name=".game.GameActivity"
             android:exported="false" />
         <activity
-            android:name=".menuScreen.MenuScreenActivity"
+            android:name=".menu.MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

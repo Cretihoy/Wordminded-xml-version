@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="?colorOnPrimary"
     android:orientation="vertical"
-    tools:context=".menuScreen.MenuScreenActivity">
+    tools:context=".menu.MenuActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/menu_screen_start_button"
+            android:id="@+id/menu_start_button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -31,7 +31,7 @@
             android:text="Играть" />
 
         <Button
-            android:id="@+id/menu_screen_rules_button"
+            android:id="@+id/menu_rules_button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -39,7 +39,7 @@
             android:text="Правила" />
 
         <Button
-            android:id="@+id/menu_screen_settings_button"
+            android:id="@+id/menu_settings_button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

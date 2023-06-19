@@ -1,10 +1,10 @@
-package com.example.wordmindedxmlversion.menuScreen
+package com.example.wordmindedxmlversion.menu
 
 import moxy.MvpView
 import moxy.viewstate.strategy.SkipStrategy
 import moxy.viewstate.strategy.StateStrategyType
 
-interface MenuScreenView : MvpView {
+interface MenuView : MvpView {
 
     @StateStrategyType(SkipStrategy::class)
     fun openGameScreen()

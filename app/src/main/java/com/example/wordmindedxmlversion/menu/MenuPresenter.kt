@@ -1,12 +1,12 @@
-package com.example.wordmindedxmlversion.menuScreen
+package com.example.wordmindedxmlversion.menu
 
 import moxy.InjectViewState
 import moxy.MvpPresenter
 import javax.inject.Inject
 
 @InjectViewState
-class MenuScreenPresenter
-@Inject constructor() : MvpPresenter<MenuScreenView>() {
+class MenuPresenter
+@Inject constructor() : MvpPresenter<MenuView>() {
 
     fun onItemCLicked() {
         viewState.openGameScreen()
