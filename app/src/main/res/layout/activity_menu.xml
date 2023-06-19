@@ -28,7 +28,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="?colorSecondary"
-            android:text="Играть" />
+            android:text="@string/play" />
 
         <Button
             android:id="@+id/menu_rules_button"
@@ -36,7 +36,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="?colorPrimary"
-            android:text="Правила" />
+            android:text="@string/rules" />
 
         <Button
             android:id="@+id/menu_settings_button"
@@ -44,7 +44,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="?colorSecondary"
-            android:text="Настройки" />
+            android:text="@string/settings" />
 
     </LinearLayout>
 </LinearLayout>
