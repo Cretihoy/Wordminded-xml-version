@@ -12,8 +12,12 @@ class GamePresenter
 ) : MvpPresenter<GameView>() {
 
     fun onScreenClicked() {
-        val task = factory.getRandomRegularTask()
-        val letter = factory.getRandomRegularLetter()
-        viewState.showCards(letter, task)
+        if (factory.hasRemainingLetters() && factory.hasRemainingTasks()) {
+            val task = factory.getRandomRegularTask()
+            val letter = factory.getRandomRegularLetter()
+            viewState.showCards(letter, task)
+        } else {
+            viewState.showEndGameScreen()
+        }
     }
 }

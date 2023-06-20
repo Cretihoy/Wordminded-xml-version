@@ -8,4 +8,7 @@ interface GameView : MvpView {
 
     @StateStrategyType(SkipStrategy::class)
     fun showCards(letter: Int?, task: Int?)
+
+    @StateStrategyType(SkipStrategy::class)
+    fun showEndGameScreen()
 }

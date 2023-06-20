@@ -110,4 +110,13 @@ class QuestionFactory
         if (index >= 0) regularLetterList.removeAt(index)
         return letter
     }
+
+    fun hasRemainingLetters(): Boolean {
+        return regularLetterList.isNotEmpty()
+    }
+
+    fun hasRemainingTasks(): Boolean {
+        return regularTaskList.isNotEmpty()
+    }
+
 }

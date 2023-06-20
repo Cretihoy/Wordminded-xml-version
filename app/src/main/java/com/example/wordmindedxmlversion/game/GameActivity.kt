@@ -1,9 +1,11 @@
 package com.example.wordmindedxmlversion.game
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.wordmindedxmlversion.R
+import com.example.wordmindedxmlversion.end.EndGameActivity
 import dagger.hilt.android.AndroidEntryPoint
 import moxy.MvpAppCompatActivity
 import moxy.ktx.moxyPresenter
@@ -37,5 +39,9 @@ class GameActivity : MvpAppCompatActivity(), GameView {
         taskBottom.text = task?.let { resources.getString(it) }
         letterTop.text = letter?.let { resources.getString(it) }
         letterBottom.text = letter?.let { resources.getString(it) }
+    }
+
+    override fun showEndGameScreen() {
+        startActivity(Intent(this, EndGameActivity::class.java))
     }
 }
