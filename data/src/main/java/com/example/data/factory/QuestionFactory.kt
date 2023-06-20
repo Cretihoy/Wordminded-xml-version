@@ -97,14 +97,14 @@ class QuestionFactory
         ).shuffled()
     }
 
-    private fun getRandomRegularTask(): Int? {
-        val task: Int? = regularTaskList.randomOrNull()
+    fun getRandomRegularTask(): Int? {
+        val task = regularTaskList.randomOrNull()
         val index = regularTaskList.indexOf(task)
         if (index >= 0) regularTaskList.removeAt(index)
         return task
     }
 
-    private fun getRandomRegularLetter(): Int? {
+    fun getRandomRegularLetter(): Int? {
         val letter = regularLetterList.randomOrNull()
         val index = regularLetterList.indexOf(letter)
         if (index >= 0) regularLetterList.removeAt(index)
