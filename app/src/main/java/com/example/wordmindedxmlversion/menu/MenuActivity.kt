@@ -16,7 +16,7 @@ import javax.inject.Provider
 @AndroidEntryPoint
 class MenuActivity : MvpAppCompatActivity(), MenuView {
 
-    private val buttonPlay: Button by lazy { findViewById(R.id.menu_start_button) }
+    private val buttonPlay: Button by lazy { findViewById(R.id.menu_play_button) }
     private val buttonRules: Button by lazy { findViewById(R.id.menu_rules_button) }
     private val buttonSettings: Button by lazy { findViewById(R.id.menu_settings_button) }
 
