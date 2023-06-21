@@ -29,6 +29,7 @@
             android:textColor="?colorOnSecondary" />
 
         <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/settings_switch_infinity_game"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
