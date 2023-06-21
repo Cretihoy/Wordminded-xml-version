@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,9 +17,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="10dp"
+        android:layout_margin="@dimen/spacing_large"
         android:layout_weight="0.5"
         android:orientation="vertical">
 
@@ -26,25 +25,35 @@
             android:id="@+id/menu_start_button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/spacing_small"
             android:layout_weight="1"
-            android:backgroundTint="?colorSecondary"
-            android:text="@string/menu_play" />
+            android:background="@drawable/shape_red"
+            android:text="@string/menu_play"
+            android:textColor="?colorOnSecondary"
+            app:backgroundTint="@null" />
 
         <Button
             android:id="@+id/menu_rules_button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginBottom="@dimen/spacing_small"
             android:layout_weight="1"
-            android:backgroundTint="?colorPrimary"
-            android:text="@string/menu_rules" />
+            android:background="@drawable/shape_blue"
+            android:text="@string/menu_rules"
+            android:textColor="?colorOnSecondary"
+            app:backgroundTint="@null" />
 
         <Button
             android:id="@+id/menu_settings_button"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_small"
             android:layout_weight="1"
-            android:backgroundTint="?colorSecondary"
-            android:text="@string/menu_settings" />
+            android:background="@drawable/shape_red"
+            android:text="@string/menu_settings"
+            android:textColor="?colorOnSecondary"
+            app:backgroundTint="@null" />
 
     </LinearLayout>
 </LinearLayout>

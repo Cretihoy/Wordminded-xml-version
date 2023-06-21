@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/game_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/spacing_large"
     android:orientation="vertical"
     tools:context=".game.GameActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="?colorSecondary">
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:layout_weight="1"
+        android:backgroundTint="?colorSecondary"
+        app:cardCornerRadius="10dp">
 
         <TextView
             android:id="@+id/letter_top"
@@ -18,13 +23,18 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:rotation="180"
+            android:textColor="?colorOnSecondary"
             tools:text="A" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="?colorPrimary">
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:layout_weight="1"
+        android:backgroundTint="?colorPrimary"
+        app:cardCornerRadius="10dp">
 
         <TextView
             android:id="@+id/task_top"
@@ -32,33 +42,42 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:rotation="180"
+            android:textColor="?colorOnSecondary"
             tools:text="Слово кончается на эту букву" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="?colorPrimary">
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:layout_weight="1"
+        android:backgroundTint="?colorPrimary"
+        app:cardCornerRadius="10dp">
 
         <TextView
             android:id="@+id/task_bottom"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:textColor="?colorOnSecondary"
             tools:text="Слово кончается на эту букву" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="?colorSecondary">
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_weight="1"
+        android:backgroundTint="?colorSecondary"
+        app:cardCornerRadius="10dp">
 
         <TextView
             android:id="@+id/letter_bottom"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:textColor="?colorOnSecondary"
             tools:text="A" />
     </androidx.cardview.widget.CardView>
-
 </LinearLayout>

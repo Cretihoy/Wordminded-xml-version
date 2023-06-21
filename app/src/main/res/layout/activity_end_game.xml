@@ -9,14 +9,18 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:gravity="center"
-        android:text="@string/end_game_title" />
+        android:text="@string/end_game_title"
+        android:textColor="?colorOnSecondary" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="?colorPrimary"
+        android:layout_margin="@dimen/spacing_large"
+        android:background="@drawable/shape_blue"
+        android:backgroundTint="@null"
         android:text="@string/end_game_play_again"
-        android:textColor="?colorOnPrimary" />
+        android:textColor="?colorOnSecondary" />
 
 </LinearLayout>

@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/spacing_large"
     android:orientation="vertical"
     tools:context=".rules.RulesActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:gravity="center"
-        android:text="@string/rules_title" />
+        android:text="@string/rules_title"
+        android:textColor="?colorOnSecondary" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="?colorPrimary">
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:backgroundTint="?colorPrimary"
+        app:cardCornerRadius="10dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -28,7 +34,10 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="?colorSecondary">
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:backgroundTint="?colorSecondary"
+        app:cardCornerRadius="10dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -41,7 +50,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="?colorPrimary">
+        android:layout_marginTop="@dimen/spacing_small"
+        android:backgroundTint="?colorPrimary"
+        app:cardCornerRadius="10dp">
 
         <TextView
             android:layout_width="match_parent"
